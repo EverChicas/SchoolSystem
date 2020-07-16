@@ -41,6 +41,7 @@ public class SplashScreen extends javax.swing.JFrame {
                 try {
                     while (progress <= 100) {
                         jProgressBar1.setValue(progress);
+                        jProgressBar1.setString(progress+"%");
                         progress = progress+2;
                         Thread.sleep(50);
                     }
